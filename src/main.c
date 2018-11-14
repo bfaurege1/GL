@@ -6,13 +6,36 @@
 
 void main (void)
 {
-	short resultat, i=0;
-	while (i<10)
+	short resultat;
+	long point=0;
+
+	do 
 	{
-		resultat = LancerDe();
-		i++;
-	DisplayLong ("val=", resultat) ;
+		resultat = GetLong("Saisir la valeur");
+		if (resultat%2 == 0)
+			point = point + resultat;
+		
+		else if (resultat == 3)
+		{
+			point = point * 2;
+		}
+		
+		else if (resultat == 5)
+		{
+			point = point - 2;
+		}
+		else 
+			point = point ;
+		
+		
 	}
+	while (resultat != 1)	;
 	
+	if (point<0)
+	{	point = 0;}
+	
+	
+	DisplayLong("Votre nombre de point est : ",point) ;
+
 	
 }
