@@ -36,7 +36,7 @@ long long int Somme_2 (void)
 	   S2 = S2 + 3 * n	;
 		n = n + 1;
    }		
-   while (S2<9876)  ;
+   while(3*n <9876 )
    return S2;
 }			
 
@@ -49,8 +49,8 @@ short int Somme_3 (void)
   
    while (n<12)
    {
-	   num = rand()%11;
-	   S3 = S3 + num;
+	   num = rand(10) + 1	
+	  S3 = S3 + num;
 	   n = n+1;
 	  
 
