@@ -5,7 +5,18 @@
 #include "my_header.h"
 
 
-int main(void)
+int main (void)
+{
+	partie1();
+	partie2();
+	partie3();
+	partie4();
+	partie5();
+
+	return 0;
+}
+
+int partie1(void)
 {
 	unsigned char bin[10]={25,10,140,75,56,89,220,5,207,184};
 	short int i,seuil=120;
@@ -25,7 +36,7 @@ int main(void)
 }
 
 
-int main (void)
+int partie2 (void)
 {
 	short int sat[10];
 	short int i,seuilh=2500, seuilb=-2500; 
@@ -47,14 +58,14 @@ int main (void)
 }
 
 	
-int main (void)
+int partie3 (void)
 {
-	unsigned char dist[10]={25,10,140,75,56,89,220,5,207,184};
+	unsigned char dist[10]={25,10,140,75,56,89,220,5,207,184},output_dist[10];
 	short int i;
 	
-	for (i=0; i<10 ; i++)
+	for (i=0; i<9 ; i++)
 	{
-		dist[i+1] = fabs(dist[i] - dist[i+1]);
+		output_dist[i+1] = fabs(dist[i] - dist[i+1]);
 	}
 
    return 0;
@@ -63,7 +74,7 @@ int main (void)
 
  
  
-int main (void)
+int partie4 (void)
 {
 	short int N=5, i;
 	unsigned char a[N], b[N];
@@ -81,7 +92,7 @@ int main (void)
 
 
  
-int main (void)
+int partie5 (void)
 {
 	unsigned char N=6, mirroir[N];
 	short int i;
